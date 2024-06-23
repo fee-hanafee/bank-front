@@ -10,15 +10,15 @@ export default function Navbar() {
       <div className="w-full flex justify-between ml-8 mr-8">
         <div className="flex gap-4">
           <Menutext text="หน้าหลัก" />
-          <Menutext text="ฝากเงิน" path="deposit"/>
-          <Menutext text="โอนเงิน" path="transfer"/>
+          <Menutext text="ฝากเงิน" path="deposit" />
+          <Menutext text="โอนเงิน" path="transfer" />
           <Menutext text="ถอนเงิน" path="withdraw" />
-          <Menutext text="ธุรกรรม" />
+          <Menutext text="ธุรกรรม" path="transaction" />
         </div>
         <div className="flex gap-4 items-center">
           {user ? (
             <div className="" onClick={userLogout}>
-              <Menutext text="ออกจากระบบ" path="/login"/>
+              <Menutext text="ออกจากระบบ" path="/login" />
             </div>
           ) : (
             <Menutext text="เข้าสู่ระบบ" path="login" />

@@ -7,6 +7,7 @@ import ProtextRoute from "./ProtextRoute";
 import DepositPage from "../pages/DepositPage";
 import WithdrawPage from "../pages/WithdrawPage";
 import TransferPage from "../pages/TransferPage";
+import TransactionPage from "../pages/TransactionPage";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,14 @@ const router = createBrowserRouter([
         element: (
           <ProtextRoute>
             <TransferPage />
+          </ProtextRoute>
+        ),
+      },
+      {
+        path: "transaction",
+        element: (
+          <ProtextRoute>
+            <TransactionPage />
           </ProtextRoute>
         ),
       },

@@ -8,3 +8,5 @@ export const withdraw = async (input) =>
 
 export const transfer = async (input) =>
   await axios.post("/transaction/transfer", input);
+
+export const get = async () => await axios.get("/transaction/me");
