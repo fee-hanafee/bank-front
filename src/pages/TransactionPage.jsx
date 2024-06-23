@@ -57,8 +57,6 @@ export default function TransactionPage() {
   const [transac, setTransac] = useState();
   const { user } = useAuth();
 
-  console.log(transac);
-
   const fetchTransaction = async () => {
     try {
       const response = await transaction.get();
@@ -78,7 +76,6 @@ export default function TransactionPage() {
     date: formatDate(el.created_at),
   }));
 
-  //   console.log(rows);
 
   useEffect(() => {
     if (user) {
